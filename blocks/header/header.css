@@ -1,0 +1,97 @@
+.header {
+  color: white;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: min-content;
+  align-items: center;
+  column-gap: 32px;
+  padding: 16px 20px 16px 24px;
+}
+
+.header__left-section {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: min-content;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  background: none;
+  font-size: 48px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+}
+
+.header__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.header__button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 1px 0 3.5px;
+  width: 56px;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.header__button-icon {
+  font-size: 28px;
+}
+
+.header__button-icon.icon-shopping-cart {
+  position: relative;
+  left: -4px;
+}
+
+.header__button-text {
+  padding-top: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+}
+
+.header__button-counter {
+  box-sizing: border-box;
+  position: absolute;
+  top: -3.5px;
+  right: 8px;
+  padding: 0 5px 2px;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f55123;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 100%;
+}

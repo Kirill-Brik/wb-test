@@ -1,0 +1,39 @@
+.search {
+  position: relative;
+}
+
+.search__field {
+  width: 100%;
+  padding: 10px 20px 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 36px;
+}
+
+.search__field::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.search__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 0 36px 36px 0;
+  opacity: 0.4;
+}

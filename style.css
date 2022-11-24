@@ -1,0 +1,27 @@
+/* root */
+
+@import url(./vendor/normalize.css);
+@import url(./fonts/icons/style.css);
+@import url(./fonts/Segoe_UI/style.css);
+@import url(./blocks/root/root.css);
+
+/* inputs */
+
+@import url(./blocks/search/search.css);
+@import url(./blocks/checkbox/checkbox.css);
+
+/* header */
+
+@import url(./blocks/header/header.css);
+
+/* content */
+
+@import url(./blocks/content/content.css);
+
+/* shoping-cart */
+
+@import url(./blocks/shoping-cart/shoping-cart.css);
+
+/* product-card */
+
+@import url(./blocks/product-card/product-card.css);

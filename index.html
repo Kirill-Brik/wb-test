@@ -4,7 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="root">
+      <header class="header">
+        <nav class="header__nav">
+          <div class="header__left-section">
+            <button class="header__menu icon-burger"></button>
+            <img class="header__logo" src="./image/logo.png" alt="logo" />
+          </div>
+          <form class="header__form">
+            <div class="search">
+              <input
+                class="search__field"
+                type="search"
+                name="header-search"
+                id="header-search"
+                placeholder="Я ищу..."
+              />
+              <button class="search__button" type="submit">
+                <span class="icon-search search__icon"></span>
+              </button>
+            </div>
+          </form>
+          <div class="header__right-section">
+            <button class="header__button">
+              <span class="icon-person header__button-icon"></span>
+              <span class="header__button-text">Профиль</span>
+            </button>
+            <button class="header__button">
+              <span class="icon-shopping-cart header__button-icon"></span>
+              <span class="header__button-text">Корзина</span>
+              <div class="header__button-counter">3</div>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="content">
+        <h1 class="content__title">Корзина</h1>
+        <form class="shoping-cart">
+          <div class="shoping-cart__buttons">
+            <div class="shoping-cart__select-all">
+              <div class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="select-all"
+                  id="select-all"
+                />
+                <label class="checkbox__custom" for="select-all"></label>
+              </div>
+              <label class="shoping-cart__checkbox-label" for="select-all"
+                >Выбрать все</label
+              >
+            </div>
+            <span class="icon-arrow-up shoping-cart__dropdown"></span>
+          </div>
+          <ul class="shoping-cart__list">
+            <li class="shoping-cart__item">
+              <div class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="card_1"
+                  id="card_1"
+                />
+                <label class="checkbox__custom" for="card_1"></label>
+              </div>
+              <div class="product-card">
+                <img
+                  class="product-card__image"
+                  src="./image/cart_1.jpg"
+                  alt="Товар"
+                />
+                <div class="product-card__description">
+                  <p class="product-card__name">Футболка UZcotton мужская</p>
+                  <ul class="product-card__option-list">
+                    <li class="product-card__option-item">Цвет: белый</li>
+                    <li class="product-card__option-item">Размер: 56</li>
+                  </ul>
+                  <ul class="product-card__seller-list">
+                    <li class="product-card__seller-item">Коледино WB</li>
+                    <li class="product-card__seller-item">OOO Вайлдберриз</li>
+                  </ul>
+                </div>
+                <div class="product-card__button-list">
+                  <div class="product-card__counter counter">
+                    <input
+                      class="counter__numberfield"
+                      type="number"
+                      value="1"
+                    />
+                    <button class="counter__button">-</button>
+                    <button class="counter__button">+</button>
+                    <span class="counter__remainder"
+                      >Осталось <span>2</span> шт.</span
+                    >
+                  </div>
+                  <button class="product-card__like">like</button>
+                  <button class="product-card__delite">delite</button>
+                </div>
+                <div class="product-card__price-conteiner">
+                  <span class="product-card__price"> <span>522</span> сом</span>
+                  <span class="product-card__old-price">
+                    <span>1051</span> сом</span
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
 </html>

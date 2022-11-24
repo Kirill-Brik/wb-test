@@ -1,0 +1,33 @@
+.shoping-cart {
+}
+
+.shoping-cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shoping-cart__select-all {
+  display: flex;
+  align-items: center;
+}
+
+.shoping-cart__checkbox-label {
+  position: relative;
+  bottom: 2.5px;
+  margin-left: 11px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.shoping-cart__dropdown {
+  display: flex;
+  font-size: 20px;
+  color: #9797af;
+}
+
+.shoping-cart__item {
+  display: flex;
+}
