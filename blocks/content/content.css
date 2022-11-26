@@ -1,15 +1,5 @@
 .content {
-  background: white;
+  background: #f6f6fa;
   border-radius: 24px;
   padding: 24px;
-}
-
-.content__title {
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 129%;
-  letter-spacing: -0.01em;
 }

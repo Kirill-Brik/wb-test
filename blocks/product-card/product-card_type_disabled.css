@@ -1,0 +1,7 @@
+.product-card_type_disabled .product-card__image {
+  filter: saturate(0);
+}
+
+.product-card_type_disabled .product-card__description {
+  color: #a0a0a4;
+}

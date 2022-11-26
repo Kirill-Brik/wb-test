@@ -9,6 +9,7 @@
 
 @import url(./blocks/search/search.css);
 @import url(./blocks/checkbox/checkbox.css);
+@import url(./blocks/counter/conter.css);
 
 /* header */
 
@@ -22,6 +23,11 @@
 
 @import url(./blocks/shoping-cart/shoping-cart.css);
 
+/* card-order */
+
+@import url(./blocks/card-order/card-order.css);
+
 /* product-card */
 
 @import url(./blocks/product-card/product-card.css);
+@import url(./blocks/product-card/product-card_type_disabled.css);

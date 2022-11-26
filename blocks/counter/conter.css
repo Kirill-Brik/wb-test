@@ -1,0 +1,43 @@
+.counter {
+  position: relative;
+  width: 100px;
+  height: 44px;
+}
+
+.counter__numberfield {
+  box-sizing: border-box;
+  padding: 8px 28px 13px;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+}
+
+.counter__numberfield::-webkit-outer-spin-button,
+.counter__numberfield::-webkit-inner-spin-button {
+  display: none;
+}
+
+.counter__button {
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  width: 24px;
+  background: inherit;
+  border: none;
+  border-radius: 8px;
+}
+
+.counter__button_type_minus {
+  left: 4px;
+}
+
+.counter__button_type_plus {
+  right: 4px;
+}
