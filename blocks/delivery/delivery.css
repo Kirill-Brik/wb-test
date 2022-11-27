@@ -1,0 +1,136 @@
+.delivery {
+}
+
+.delivery__title {
+  column-gap: 10px;
+}
+
+.delivery__subtitle {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.delivery__change {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #cb11ab;
+  background: inherit;
+}
+
+.delivery__list {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 16px;
+  margin: 16px 0 24px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.delivery__item {
+  display: grid;
+  grid-template-columns: 153px 1fr;
+  column-gap: 32px;
+}
+
+.delivery__address-info {
+  display: flex;
+  align-items: center;
+}
+
+.delivery__address-raiting {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.delivery__address-raiting .icon-star-fill {
+  font-size: 12px;
+  color: #ff970d;
+}
+
+.delivery__product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  column-gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.delivery__product {
+  position: relative;
+}
+
+.delivery__image-container {
+  position: relative;
+  width: 40px;
+  height: min-content;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.delivery__image-container::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0;
+  padding-top: calc(56 / 40 * 100%);
+}
+
+.delivery__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery__product-counter {
+  box-sizing: border-box;
+  position: absolute;
+  top: -8px;
+  right: -4px;
+  z-index: 1;
+  padding: 0 5px 2px;
+  min-width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f55123;
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 100%;
+  color: white;
+}
+
+.delivery__return {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.delivery__return-icon {
+  font-size: 22px;
+  background: linear-gradient(224.84deg, #0cd38b 26.09%, #0cb477 105.25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.delivery__return-price {
+  color: #0cb477;
+  text-decoration: underline dashed rgba(12, 180, 119, 0.2);
+  text-underline-offset: 3px;
+}

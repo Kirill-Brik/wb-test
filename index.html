@@ -37,7 +37,7 @@
             <button class="header__button">
               <span class="icon-shopping-cart header__button-icon"></span>
               <span class="header__button-text">Корзина</span>
-              <div class="header__button-counter">3</div>
+              <span class="header__button-counter">3</span>
             </button>
           </div>
         </nav>
@@ -409,64 +409,160 @@
                 </li>
               </ul>
             </section>
+            <section class="shoping-card__section">
+              <div class="delivery card">
+                <div class="card__title-section delivery__title">
+                  <h2 class="card__title">Способ доставки</h2>
+                  <button class="delivery__change">Изменить</button>
+                </div>
+                <ul class="delivery__list">
+                  <li class="delivery__item">
+                    <h3 class="delivery__subtitle">Пункт выдачи</h3>
+                    <div class="delivery__address">
+                      <p class="delivery__address-text card__text">
+                        Бишкек, улица Ахматбека Суюмбаева, 12/1
+                      </p>
+                      <div class="delivery__address-info card__caption">
+                        <span class="delivery__address-raiting"
+                          ><span class="icon-star-fill"></span> 4.99</span
+                        >
+                        <span class="delivery__address-time"
+                          >Ежедневно с 10 до 21
+                        </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="delivery__item">
+                    <h3 class="delivery__subtitle">Стоимость доставки</h3>
+                    <p class="delivery__price card__text">Бесплатно</p>
+                  </li>
+                  <li class="delivery__item">
+                    <h3 class="delivery__subtitle">5—6 февраля</h3>
+                    <ul class="delivery__product-list">
+                      <li class="delivery__product-item">
+                        <div class="delivery__product">
+                          <div class="delivery__image-container">
+                            <img
+                              class="delivery__image"
+                              src="./image/card_1.jpg"
+                              alt="товар"
+                            />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="delivery__product-item">
+                        <div class="delivery__product">
+                          <div class="delivery__image-container">
+                            <img
+                              class="delivery__image"
+                              src="./image/card_2.jpg"
+                              alt="товар"
+                            />
+                          </div>
+                          <span class="delivery__product-counter">184</span>
+                        </div>
+                      </li>
+                      <li class="delivery__product-item">
+                        <div class="delivery__product">
+                          <div class="delivery__image-container">
+                            <img
+                              class="delivery__image"
+                              src="./image/card_3.jpg"
+                              alt="товар"
+                            />
+                          </div>
+                          <span class="delivery__product-counter">2</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="delivery__item">
+                    <h3 class="delivery__subtitle">7—8 февраля</h3>
+                    <ul class="delivery__product-list">
+                      <li class="delivery__product-item">
+                        <div class="delivery__product">
+                          <div class="delivery__image-container">
+                            <img
+                              class="delivery__image"
+                              src="./image/card_1.jpg"
+                              alt="товар"
+                            />
+                          </div>
+                          <span class="delivery__product-counter">16</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="delivery__return">
+                  <span
+                    class="delivery__return-icon icon-price-shipping"
+                  ></span>
+                  <p class="card__caption">
+                    Обратная доставка товаров на склад при отказе —
+                    <span class="delivery__return-price">бесплатно</span>
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
-          <div class="shoping-cart__card-order card-order">
-            <div class="card-order__price-container">
-              <h2 class="card-order__title">
-                Итого
-                <span class="card-order__price"
+          <div class="shoping-cart__order card order">
+            <div class="order__price">
+              <div class="card__title-section">
+                <h2 class="card__title order__title">Итого</h2>
+                <span class="card__title order__title"
                   ><span>2 101 063</span> сом</span
                 >
-              </h2>
-              <ul class="card-order__price-list">
-                <li class="card-order__price-item">
+              </div>
+              <ul class="order__price-list">
+                <li class="order__price-item card__text">
                   <span><span>4</span> товара</span>
                   <span><span>2 302 048</span> сом</span>
                 </li>
-                <li class="card-order__price-item">
+                <li class="order__price-item card__text">
                   <span>Скидка</span>
                   <span>−<span>200 985</span> сом</span>
                 </li>
-                <li class="card-order__price-item">
+                <li class="order__price-item card__text">
                   <span>Доставка</span>
                   <span>Бесплатно</span>
                 </li>
               </ul>
             </div>
-            <div class="card-order__delivery">
-              <h3 class="card-order__delivery-title">
-                Доставка в пункт выдачи
-                <button class="icon-pencil"></button>
-              </h3>
-              <p class="card-order__address">
+            <div class="order__delivery">
+              <div class="card__title-section">
+                <h3 class="card__subtitle order__subtitle">
+                  Доставка в пункт выдачи
+                </h3>
+                <button class="order__change icon-pencil"></button>
+              </div>
+              <p class="card__caption order__address">
                 Бишкек, улица Ахматбека Суюмбаева, 12/1
               </p>
-              <button class="card-order__date">5-8 фев</button>
-              <div class="card-order__return">
-                <span
-                  class="card-order__return-icon icon-price-shipping"
-                ></span>
-                <p class="card-order__return-text">
+              <button class="card__caption order__date">5-8 фев</button>
+              <div class="order__return">
+                <span class="order__return-icon icon-price-shipping"></span>
+                <p class="card__caption order__return-text">
                   Обратная доставка товаров на склад при отказе —
-                  <span class="card-order__return-price">бесплатно</span>
+                  <span class="order__return-price">бесплатно</span>
                 </p>
               </div>
             </div>
-            <div class="card-order__payment">
-              <h3 class="card-order__payment-title">
-                Оплата картой
-                <button class="icon-pencil"></button>
-              </h3>
-              <div class="card-order__payment-type">
-                <div class="card-order__payment-logo">
+            <div class="order__payment">
+              <div class="card__title-section">
+                <h3 class="card__subtitle order__subtitle">Оплата картой</h3>
+                <button class="order__change icon-pencil"></button>
+              </div>
+              <div class="order__payment-type">
+                <div class="order__payment-logo">
                   <img src="./image/mir.png" alt="система оплаты" />
                 </div>
-                <span class="card-order__payment-card"
+                <span class="card__caption order__payment-card"
                   >1234 12•• •••• 1234</span
                 >
               </div>
-              <div class="card-order__payment-option">
-                <div class="card-order__payment-immediately">
+              <div class="order__payment-option">
+                <div class="order__payment-immediately">
                   <div class="checkbox">
                     <input
                       class="checkbox__input"
@@ -480,19 +576,19 @@
                     ></label>
                   </div>
                   <label
-                    class="card-order__checkbox-label"
+                    class="card__caption order__checkbox-label"
                     for="pay-immediately"
                     >Списать оплату сразу</label
                   >
                 </div>
-                <p class="card-order__payment-description">
+                <p class="card__caption order__payment-description">
                   Спишем оплату с карты при получении
                 </p>
               </div>
             </div>
-            <div class="card-order__button-section">
-              <button class="card-order__button">Заказать</button>
-              <p class="card-order__policy">
+            <div class="order__submit-section">
+              <button class="order__submit">Заказать</button>
+              <p class="card__caption order__policy">
                 <span class="icon-checkbox"></span>
                 Соглашаюсь
                 <span>с правилами пользования торговой площадкой</span> и
@@ -502,7 +598,9 @@
           </div>
         </form>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <p class="footer__text">© 2022 ООО «Товары и точка»</p>
+      </footer>
     </div>
   </body>
 </html>

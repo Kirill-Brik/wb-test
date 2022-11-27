@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+.footer__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  color: rgba(255, 255, 255, 0.7);
+}

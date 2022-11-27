@@ -19,15 +19,27 @@
 
 @import url(./blocks/content/content.css);
 
+/* footer */
+
+@import url(./blocks/footer/footer.css);
+
+/* card */
+
+@import url(./blocks/card/card.css);
+
 /* shoping-cart */
 
 @import url(./blocks/shoping-cart/shoping-cart.css);
-
-/* card-order */
-
-@import url(./blocks/card-order/card-order.css);
 
 /* product-card */
 
 @import url(./blocks/product-card/product-card.css);
 @import url(./blocks/product-card/product-card_type_disabled.css);
+
+/* delivery */
+
+@import url(./blocks/delivery/delivery.css);
+
+/* order */
+
+@import url(./blocks/order/order.css);
