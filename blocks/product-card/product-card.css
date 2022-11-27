@@ -125,6 +125,7 @@
   padding: 0;
   border: none;
   font-size: 20px;
+  background: inherit;
 }
 
 .product-card__price-conteiner {
