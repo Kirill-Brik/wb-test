@@ -1,0 +1,46 @@
+.input {
+  position: relative;
+}
+
+.input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  color: #9797af;
+}
+
+.input__field {
+  margin: 18px 0 18px;
+  padding: 0;
+  padding-bottom: 3px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.input__field::placeholder {
+  color: #9797af;
+}
+
+.input__field:focus::placeholder {
+  visibility: hidden;
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__field:focus + .input__label {
+  visibility: visible;
+}
+
+.input__error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+}

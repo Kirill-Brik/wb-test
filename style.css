@@ -4,20 +4,18 @@
 @import url(./fonts/icons/style.css);
 @import url(./fonts/Segoe_UI/style.css);
 @import url(./blocks/root/root.css);
+@import url(./blocks/content/content.css);
 
 /* inputs */
 
 @import url(./blocks/search/search.css);
 @import url(./blocks/checkbox/checkbox.css);
 @import url(./blocks/counter/conter.css);
+@import url(./blocks/input/input.css);
 
 /* header */
 
 @import url(./blocks/header/header.css);
-
-/* content */
-
-@import url(./blocks/content/content.css);
 
 /* footer */
 
@@ -39,6 +37,14 @@
 /* delivery */
 
 @import url(./blocks/delivery/delivery.css);
+
+/* payment */
+
+@import url(./blocks/payment/payment.css);
+
+/* consignee */
+
+@import url(./blocks/consignee/consignee.css);
 
 /* order */
 

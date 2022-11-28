@@ -26,23 +26,8 @@
   list-style-type: none;
 }
 
-.shoping-cart__item {
-  padding-top: 12px;
-}
-
-.shoping-cart__item:first-child {
-  padding-top: 11px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .shoping-cart__title {
   margin: 0 0 11px;
-  padding: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 129%;
-  letter-spacing: -0.01em;
 }
 
 .shoping-cart__dropdown {
@@ -55,22 +40,10 @@
   display: flex;
 }
 
-.shoping-cart__subtitle {
-  margin: 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-}
-
 .shoping-cart__checkbox-label {
   position: relative;
   bottom: 2.5px;
   margin-left: 11px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
 }
 
 .shoping-cart__dropdown-button {
