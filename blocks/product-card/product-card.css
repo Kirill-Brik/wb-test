@@ -114,6 +114,10 @@
   background: inherit;
 }
 
+.product-card__button.icon-trash-bin:hover {
+  color: #f55123;
+}
+
 .product-card__price-conteiner {
   display: grid;
   grid-auto-flow: row;
