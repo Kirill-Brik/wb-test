@@ -83,3 +83,9 @@
   line-height: 100%;
   color: white;
 }
+
+@media screen and (max-width: 479px) {
+  .content {
+    padding: 15px 0 24px;
+  }
+}

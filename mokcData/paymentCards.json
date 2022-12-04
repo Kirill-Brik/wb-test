@@ -1,0 +1,26 @@
+[
+  {
+    "imgSrc": "./image/mir.png",
+    "name": "1234 56•• •••• 1111",
+    "date": "01/30",
+    "active": true
+  },
+  {
+    "imgSrc": "./image/visa.png",
+    "name": "1234 56•• •••• 2222",
+    "date": "01/31",
+    "active": false
+  },
+  {
+    "imgSrc": "./image/mastercard.png",
+    "name": "1234 56•• •••• 3333",
+    "date": "01/32",
+    "active": false
+  },
+  {
+    "imgSrc": "./image/maestro.png",
+    "name": "1234 56•• •••• 4444",
+    "date": "01/33",
+    "active": false
+  }
+]

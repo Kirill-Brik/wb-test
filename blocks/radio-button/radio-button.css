@@ -1,0 +1,23 @@
+.radio-button {
+  display: flex;
+}
+
+.radio-button__input {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__custom {
+  min-height: 16px;
+  min-width: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+}
+
+.radio-button__input:checked + .radio-button__custom {
+  border: 5px solid #cb11ab;
+}

@@ -2,21 +2,8 @@
   row-gap: 24px;
 }
 
-.order__title {
-  column-gap: 30px;
-}
-
-.order__subtitle {
-  column-gap: 16px;
-}
-
 .order__change {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: inherit;
   font-size: 20px;
-  color: #cb11ab;
 }
 
 .order__price {
@@ -48,14 +35,9 @@
 }
 
 .order__date {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  width: max-content;
   color: #cb11ab;
   text-decoration: underline dashed rgba(203, 17, 171, 0.2);
   text-underline-offset: 4px;
-  background: inherit;
 }
 
 .order__return {
@@ -84,31 +66,13 @@
   text-underline-offset: 3px;
 }
 
-.order__payment-type {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  align-items: center;
-  column-gap: 8px;
+.order__payment-container {
   margin-top: 4px;
   margin-bottom: 12px;
 }
 
-.order__payment-logo {
-  box-sizing: border-box;
-  padding: 1px;
-  width: 32px;
-  height: 24px;
-  border-radius: 4px;
-  background: #f6f6fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.order__payment-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.order__payment-card {
+  margin-left: 8px;
 }
 
 .order__payment-option {
@@ -149,7 +113,12 @@
   padding-left: 21px;
 }
 
-.order__policy .icon-checkbox {
+.order__policy-important {
+  text-decoration: underline rgba(0, 0, 0, 0.1);
+  text-underline-offset: 4px;
+}
+
+.order__policy-icon {
   position: absolute;
   top: -2px;
   left: -5px;
@@ -157,7 +126,31 @@
   text-decoration: none;
 }
 
-.order__policy span {
-  text-decoration: underline rgba(0, 0, 0, 0.1);
-  text-underline-offset: 4px;
+@media screen and (max-width: 479px) {
+  .order {
+    padding: 16px;
+    background: none;
+    box-shadow: none;
+    row-gap: 16px;
+  }
+
+  .order__subtitle,
+  .order__address,
+  .order__date,
+  .order__payment-container {
+    display: none;
+  }
+
+  .order__return {
+    margin-top: 0;
+    background: #f0ecf4;
+  }
+
+  .order__payment-option {
+    background: #f0ecf4;
+  }
+
+  .order__submit-section {
+    margin-top: 8px;
+  }
 }

@@ -1,10 +1,28 @@
 .consignee__form {
   margin-top: 16px;
   max-width: 700px;
+  width: 100%;
 }
 
 .consignee__row {
   display: grid;
   grid-auto-flow: column;
   column-gap: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .consignee__row {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .consignee {
+    row-gap: 8px;
+  }
+
+  .consignee__form {
+    margin-top: 0;
+  }
 }

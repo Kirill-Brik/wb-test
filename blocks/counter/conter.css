@@ -6,7 +6,7 @@
 
 .counter__numberfield {
   box-sizing: border-box;
-  padding: 8px 28px 13px;
+  padding: 8px 27px 13px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -20,20 +20,59 @@
 }
 
 .counter__button {
-  padding: 0;
+  box-sizing: content-box;
   position: absolute;
-  top: 10px;
-  bottom: 10px;
+  top: 0;
+  bottom: 0;
+  padding: 8px 0 12px;
   width: 24px;
+  height: 24px;
   background: inherit;
   border: none;
   border-radius: 8px;
 }
 
+.counter__button_disabled {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .counter__button_type_minus {
-  left: 4px;
+  left: 0;
+  padding-left: 3px;
 }
 
 .counter__button_type_plus {
-  right: 4px;
+  right: 0;
+  padding-right: 3px;
+}
+
+@media screen and (max-width: 479px) {
+  .counter {
+    width: 80px;
+    height: 32px;
+  }
+
+  .counter__numberfield {
+    padding: 4.33px 24px 7.67px;
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  .counter__button {
+    height: 25.33px;
+    width: 15px;
+    padding: 1px 0 5.67px 0;
+  }
+
+  .counter__button_type_minus {
+    left: 0;
+    padding-right: 1px;
+    padding-left: 6px;
+  }
+
+  .counter__button_type_plus {
+    right: 0;
+    padding-right: 6px;
+    padding-left: 1px;
+  }
 }

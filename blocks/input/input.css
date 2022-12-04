@@ -1,17 +1,17 @@
 .input {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .input__label {
-  position: absolute;
-  top: 0;
-  left: 0;
+  order: 0;
   visibility: hidden;
   color: #9797af;
 }
 
 .input__field {
-  margin: 18px 0 18px;
+  order: 1;
+  margin: 2px 0 3px;
   padding: 0;
   padding-bottom: 3px;
   width: 100%;
@@ -35,12 +35,31 @@
   visibility: visible;
 }
 
-.input__error {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.input__field_type_error {
+  color: #f55123;
+  border-color: #f55123;
+}
+
+.input__caption {
+  order: 3;
+  min-height: 14px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 117%;
+}
+
+.input__caption_type_error {
+  color: #f55123;
+}
+
+@media screen and (max-width: 479px) {
+  .input__label {
+    font-size: 12px;
+    line-height: 117%;
+  }
+
+  .input {
+    margin-top: 3px;
+  }
 }

@@ -1,6 +1,8 @@
 .card {
   display: grid;
   grid-auto-flow: row;
+  grid-auto-rows: max-content;
+  row-gap: 16px;
   padding: 16px 24px 24px;
   height: max-content;
   background: #ffffff;
@@ -12,4 +14,24 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
+  column-gap: 10px;
+}
+
+.card__change {
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: #cb11ab;
+  background: inherit;
+}
+
+@media screen and (max-width: 479px) {
+  .card {
+    padding: 16px 16px 24px;
+  }
+
+  .card__title {
+    font-size: 20px;
+    line-height: 140%;
+  }
 }

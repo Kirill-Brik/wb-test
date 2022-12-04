@@ -1,11 +1,11 @@
-.payment__type {
-  display: flex;
-  margin: 16px 0 8px;
+.payment__content {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 8px;
 }
 
 .payment__logo-container {
   box-sizing: border-box;
-  padding: 1px;
   width: 32px;
   height: 24px;
   border-radius: 4px;
@@ -21,10 +21,21 @@
   object-fit: contain;
 }
 
+.payment__card-container {
+  display: flex;
+  align-items: center;
+}
+
 .payment__card {
   margin: 0 12px 0 8px;
 }
 
 .payment__caption {
   color: #a0a0a4;
+}
+
+@media screen and (max-width: 479px) {
+  .payment {
+    row-gap: 8px;
+  }
 }

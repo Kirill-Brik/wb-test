@@ -10,6 +10,7 @@
 
 @import url(./blocks/search/search.css);
 @import url(./blocks/checkbox/checkbox.css);
+@import url(./blocks/radio-button/radio-button.css);
 @import url(./blocks/counter/conter.css);
 @import url(./blocks/input/input.css);
 
@@ -49,3 +50,7 @@
 /* order */
 
 @import url(./blocks/order/order.css);
+
+/* popup */
+
+@import url(./blocks/popup/popup.css);
